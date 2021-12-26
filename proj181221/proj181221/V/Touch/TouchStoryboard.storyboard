@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TouchVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TouchVC" id="Y6W-OH-hqX" customClass="TouchVC" customModule="proj181221" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-8j-XDV" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="32896-caution-wet-paint"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTs-3b-G1h" customClass="SwiftyDrawView" customModule="SwiftyDraw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMP-2S-lps">
+                                <rect key="frame" x="32" y="403" width="350" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Gkn-nK-POW"/>
+                                </constraints>
+                                <string key="text">Use your finger 👆
+to draw red fill the screen 
+to test the touch screen</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.3411764705882353" green="0.37254901960784315" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VTs-3b-G1h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="850-yy-Wwf"/>
+                            <constraint firstItem="pcf-8j-XDV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Gfo-8o-TST"/>
+                            <constraint firstItem="VTs-3b-G1h" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Oxy-TJ-juQ"/>
+                            <constraint firstAttribute="bottom" secondItem="pcf-8j-XDV" secondAttribute="bottom" id="SR9-VZ-hTB"/>
+                            <constraint firstItem="CMP-2S-lps" firstAttribute="centerX" secondItem="pcf-8j-XDV" secondAttribute="centerX" id="dvK-6D-aa8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pcf-8j-XDV" secondAttribute="trailing" id="e3Z-ec-wTf"/>
+                            <constraint firstItem="pcf-8j-XDV" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="e81-oA-TSf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VTs-3b-G1h" secondAttribute="trailing" id="iol-4x-s2r"/>
+                            <constraint firstItem="CMP-2S-lps" firstAttribute="centerY" secondItem="pcf-8j-XDV" secondAttribute="centerY" id="pWW-5C-T1q"/>
+                            <constraint firstAttribute="bottom" secondItem="VTs-3b-G1h" secondAttribute="bottom" id="yZd-op-ve5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblContent" destination="CMP-2S-lps" id="yGj-t2-Pgl"/>
+                        <outlet property="uvAnimation" destination="pcf-8j-XDV" id="6Nd-8S-GLL"/>
+                        <outlet property="uvDrawnArea" destination="VTs-3b-G1h" id="aOw-JH-TJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="82"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="pcf-8j-XDV"/>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
