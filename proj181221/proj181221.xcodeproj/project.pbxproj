@@ -22,6 +22,20 @@
 		4F161C9B27786C9A0098D856 /* TouchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F161C9A27786C9A0098D856 /* TouchVC.swift */; };
 		4F161C9D277887300098D856 /* 32896-caution-wet-paint.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F161C9C277887300098D856 /* 32896-caution-wet-paint.json */; };
 		4F161C9F27788AD40098D856 /* UIView+FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F161C9E27788AD40098D856 /* UIView+FadeInOut.swift */; };
+		4F161CA22778A2880098D856 /* Array+SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F161CA12778A2880098D856 /* Array+SafeIndex.swift */; };
+		4F161CA52778AD610098D856 /* VibrationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F161CA42778AD610098D856 /* VibrationStoryboard.storyboard */; };
+		4F161CA72778AD7A0098D856 /* VibrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F161CA62778AD7A0098D856 /* VibrationVC.swift */; };
+		4F161CA92778AD8D0098D856 /* VibrationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F161CA82778AD8D0098D856 /* VibrationVM.swift */; };
+		4F161CAD2778B00E0098D856 /* VibrationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F161CAB2778B00E0098D856 /* VibrationTVC.swift */; };
+		4F161CAE2778B00E0098D856 /* VibrationTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F161CAC2778B00E0098D856 /* VibrationTVC.xib */; };
+		4F161CB12778B0D60098D856 /* 40576-vibration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F161CAF2778B0D60098D856 /* 40576-vibration.json */; };
+		4F161CB22778B0D60098D856 /* 85244-wave.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F161CB02778B0D60098D856 /* 85244-wave.json */; };
+		4F161CB62778B4060098D856 /* 64278-celular-vibrando.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F161CB52778B4060098D856 /* 64278-celular-vibrando.json */; };
+		4F161CBA2778B5040098D856 /* 4842-mobile-icon-vibration-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F161CB92778B5040098D856 /* 4842-mobile-icon-vibration-animation.json */; };
+		4F16BB89277D6050003FF5BD /* AVCaptureDevice+Flash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BB88277D6050003FF5BD /* AVCaptureDevice+Flash.swift */; };
+		4F16BB8B277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB8A277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json */; };
+		4F16BB8F277D7692003FF5BD /* 10148-ringing-phone-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB8E277D7692003FF5BD /* 10148-ringing-phone-animation.json */; };
+		4F16BB91277D7728003FF5BD /* 29031-shake-phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB90277D7728003FF5BD /* 29031-shake-phone.json */; };
 		4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */; };
 		4F674AC5276EFE9A008C66C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */; };
 		4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC6276EFE9A008C66C0 /* ViewController.swift */; };
@@ -54,6 +68,20 @@
 		4F161C9A27786C9A0098D856 /* TouchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchVC.swift; sourceTree = "<group>"; };
 		4F161C9C277887300098D856 /* 32896-caution-wet-paint.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "32896-caution-wet-paint.json"; sourceTree = "<group>"; };
 		4F161C9E27788AD40098D856 /* UIView+FadeInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FadeInOut.swift"; sourceTree = "<group>"; };
+		4F161CA12778A2880098D856 /* Array+SafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeIndex.swift"; sourceTree = "<group>"; };
+		4F161CA42778AD610098D856 /* VibrationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VibrationStoryboard.storyboard; sourceTree = "<group>"; };
+		4F161CA62778AD7A0098D856 /* VibrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationVC.swift; sourceTree = "<group>"; };
+		4F161CA82778AD8D0098D856 /* VibrationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationVM.swift; sourceTree = "<group>"; };
+		4F161CAB2778B00E0098D856 /* VibrationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationTVC.swift; sourceTree = "<group>"; };
+		4F161CAC2778B00E0098D856 /* VibrationTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VibrationTVC.xib; sourceTree = "<group>"; };
+		4F161CAF2778B0D60098D856 /* 40576-vibration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "40576-vibration.json"; sourceTree = "<group>"; };
+		4F161CB02778B0D60098D856 /* 85244-wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "85244-wave.json"; sourceTree = "<group>"; };
+		4F161CB52778B4060098D856 /* 64278-celular-vibrando.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "64278-celular-vibrando.json"; sourceTree = "<group>"; };
+		4F161CB92778B5040098D856 /* 4842-mobile-icon-vibration-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4842-mobile-icon-vibration-animation.json"; sourceTree = "<group>"; };
+		4F16BB88277D6050003FF5BD /* AVCaptureDevice+Flash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Flash.swift"; sourceTree = "<group>"; };
+		4F16BB8A277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "74906-rings-circles-wave-animation.json"; sourceTree = "<group>"; };
+		4F16BB8E277D7692003FF5BD /* 10148-ringing-phone-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "10148-ringing-phone-animation.json"; sourceTree = "<group>"; };
+		4F16BB90277D7728003FF5BD /* 29031-shake-phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "29031-shake-phone.json"; sourceTree = "<group>"; };
 		4F674ABF276EFE9A008C66C0 /* proj181221.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj181221.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +129,7 @@
 				4F161C8227782E6C0098D856 /* Color */,
 				4F161C90277865640098D856 /* Brightness */,
 				4F161C9727786C6A0098D856 /* Touch */,
+				4F161CA32778AD320098D856 /* Vibration */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -123,6 +152,8 @@
 				4F161C8A27782FF90098D856 /* UIColor+Random.swift */,
 				4F161C8C27783B260098D856 /* UIColor+NewColor.swift */,
 				4F161C9E27788AD40098D856 /* UIView+FadeInOut.swift */,
+				4F161CA12778A2880098D856 /* Array+SafeIndex.swift */,
+				4F16BB88277D6050003FF5BD /* AVCaptureDevice+Flash.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,10 +180,37 @@
 		4F161CA0277890400098D856 /* Lotties */ = {
 			isa = PBXGroup;
 			children = (
+				4F16BB90277D7728003FF5BD /* 29031-shake-phone.json */,
+				4F16BB8E277D7692003FF5BD /* 10148-ringing-phone-animation.json */,
+				4F16BB8A277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json */,
+				4F161CB92778B5040098D856 /* 4842-mobile-icon-vibration-animation.json */,
+				4F161CB52778B4060098D856 /* 64278-celular-vibrando.json */,
+				4F161CAF2778B0D60098D856 /* 40576-vibration.json */,
+				4F161CB02778B0D60098D856 /* 85244-wave.json */,
 				4F161C9C277887300098D856 /* 32896-caution-wet-paint.json */,
 				4F161C80277829720098D856 /* 89140-apps.json */,
 			);
 			path = Lotties;
+			sourceTree = "<group>";
+		};
+		4F161CA32778AD320098D856 /* Vibration */ = {
+			isa = PBXGroup;
+			children = (
+				4F161CA42778AD610098D856 /* VibrationStoryboard.storyboard */,
+				4F161CA62778AD7A0098D856 /* VibrationVC.swift */,
+				4F161CA82778AD8D0098D856 /* VibrationVM.swift */,
+				4F161CAA2778AFE30098D856 /* Cells */,
+			);
+			path = Vibration;
+			sourceTree = "<group>";
+		};
+		4F161CAA2778AFE30098D856 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4F161CAB2778B00E0098D856 /* VibrationTVC.swift */,
+				4F161CAC2778B00E0098D856 /* VibrationTVC.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		4F674AB6276EFE9A008C66C0 = {
@@ -301,13 +359,22 @@
 				4F674ACF276EFEA0008C66C0 /* LaunchScreen.storyboard in Resources */,
 				4F161C81277829720098D856 /* 89140-apps.json in Resources */,
 				4F674ACC276EFEA0008C66C0 /* Assets.xcassets in Resources */,
+				4F161CBA2778B5040098D856 /* 4842-mobile-icon-vibration-animation.json in Resources */,
 				4F161C922778658B0098D856 /* BrightnessStoryboard.storyboard in Resources */,
+				4F161CAE2778B00E0098D856 /* VibrationTVC.xib in Resources */,
+				4F161CB12778B0D60098D856 /* 40576-vibration.json in Resources */,
+				4F16BB8B277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json in Resources */,
 				4F161C9927786C880098D856 /* TouchStoryboard.storyboard in Resources */,
+				4F161CB62778B4060098D856 /* 64278-celular-vibrando.json in Resources */,
+				4F161CA52778AD610098D856 /* VibrationStoryboard.storyboard in Resources */,
 				4F161C8827782ECC0098D856 /* ColorStoryboard.storyboard in Resources */,
 				4F674AD7276F01C5008C66C0 /* HomeVC.storyboard in Resources */,
 				4F674ACA276EFE9A008C66C0 /* Main.storyboard in Resources */,
 				4F161C9D277887300098D856 /* 32896-caution-wet-paint.json in Resources */,
+				4F161CB22778B0D60098D856 /* 85244-wave.json in Resources */,
 				4FDCA1F6276F0A38008D9868 /* HomeTVC.xib in Resources */,
+				4F16BB91277D7728003FF5BD /* 29031-shake-phone.json in Resources */,
+				4F16BB8F277D7692003FF5BD /* 10148-ringing-phone-animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +447,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDCA1F5276F0A38008D9868 /* HomeTVC.swift in Sources */,
+				4F161CA22778A2880098D856 /* Array+SafeIndex.swift in Sources */,
+				4F161CAD2778B00E0098D856 /* VibrationTVC.swift in Sources */,
 				4F161C632776DCCE0098D856 /* HomeVM.swift in Sources */,
 				4FA6A774276F0C9E00EE43E1 /* HomeVC.swift in Sources */,
 				4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */,
@@ -389,12 +458,15 @@
 				4F161C8B27782FF90098D856 /* UIColor+Random.swift in Sources */,
 				4F161C8D27783B260098D856 /* UIColor+NewColor.swift in Sources */,
 				4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */,
+				4F161CA72778AD7A0098D856 /* VibrationVC.swift in Sources */,
 				4F161C9B27786C9A0098D856 /* TouchVC.swift in Sources */,
 				4F161C96277865B10098D856 /* BrightnessVM.swift in Sources */,
 				4FDCA1ED276F04F8008D9868 /* R.generated.swift in Sources */,
 				4F161C612776DC460098D856 /* HomeM.swift in Sources */,
 				4F161C8627782EAB0098D856 /* ColorVC.swift in Sources */,
 				4FA6A779276F142200EE43E1 /* NSObject+ClassName.swift in Sources */,
+				4F16BB89277D6050003FF5BD /* AVCaptureDevice+Flash.swift in Sources */,
+				4F161CA92778AD8D0098D856 /* VibrationVM.swift in Sources */,
 				4F674AC5276EFE9A008C66C0 /* SceneDelegate.swift in Sources */,
 				4FA6A777276F13DD00EE43E1 /* UITableView+Reusable.swift in Sources */,
 			);

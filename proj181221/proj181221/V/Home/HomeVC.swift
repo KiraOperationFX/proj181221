@@ -12,12 +12,13 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var uvTopAnimation: AnimationView!
     @IBOutlet weak var uvHeaderAnimation: AnimationView!
-    
     @IBOutlet weak var tbvContent: UITableView!
+    
+    lazy var vm: HomeVMProtocol = HomeVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         config()
     }
     
@@ -25,9 +26,6 @@ class HomeVC: UIViewController {
         tbvContent.register(cell: HomeTVC.self)
         tbvContent.delegate = self
         tbvContent.dataSource = self
-        //tbvContent.contentInset.top = 50
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -36,17 +34,11 @@ class HomeVC: UIViewController {
             $0?.loopMode = .loop
             $0?.play(completion: nil)
         }
-
-        
     }
-    
     
     @IBAction func tapBtn(_ sender: Any) {
-        
         print("aaaaaa")
     }
-    
-
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
@@ -56,6 +48,10 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tbvContent.dequeue(cell: HomeTVC.self, for: indexPath)
+        if let data = vm.getData(index: indexPath.row) {
+            cell.imvIcon.image = data.icon
+            cell.lblName.text = data.label
+        }
         return cell
     }
     
@@ -69,6 +65,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         case 2: // Touch
             let vc = R.storyboard.touchStoryboard.touchVC()!
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 3: // Vibration
+            let vc = R.storyboard.vibrationStoryboard.vibrationVC()!
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             break

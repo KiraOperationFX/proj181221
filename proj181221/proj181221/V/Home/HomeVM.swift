@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeVMProtocol {
-    
+    func getData(index: Int) -> HomeM?
 }
 
 protocol HomeVMEvent: AnyObject {
@@ -16,5 +16,19 @@ protocol HomeVMEvent: AnyObject {
 }
 
 final class HomeVM: HomeVMProtocol {
+    private var homeData: [HomeM] = [
+        HomeM(icon: R.image.vfdsbvbefs()!, label: "Color Titration"),
+        HomeM(icon: R.image.gvbefsfvaaev()!, label: "Brightness"),
+        HomeM(icon: R.image.vegrsesagreas()!, label: "Touch"),
+        HomeM(icon: R.image.cdsvaewvddws()!, label: "Vibration")
+    ]
+    
+    init() {
+        
+    }
+    
+    func getData(index: Int) -> HomeM? {
+        return homeData[safeIndex: index]
+    }
     
 }

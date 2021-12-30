@@ -23,22 +23,9 @@ class HomeTVC: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @objc func longPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == .began {
-            print("Long Press")
-//            imvBackground.image = R.image.img94776()
-            imvIcon.alpha = 0.3
-            lblName.alpha = 0.3
-        }
-        if gesture.state == .ended {
-//            imvBackground.image = R.image.img94754()
-            imvIcon.alpha = 1
-            lblName.alpha = 1
-        }
-    }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
-        
+        imvIcon.image = nil
+        lblName.text?.removeAll()
     }
 }

@@ -10,4 +10,5 @@ target 'proj181221' do
   pod 'lottie-ios'
   pod 'UIColor_Hex_Swift'
   pod 'SwiftyDraw'
+  pod 'FeedbackEffect'
 end
