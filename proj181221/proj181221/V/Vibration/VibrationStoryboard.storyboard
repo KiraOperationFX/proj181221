@@ -22,7 +22,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="74906-rings-circles-wave-animation"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-K6-KMs" customClass="AnimationView" customModule="Lottie">
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-K6-KMs" customClass="AnimationView" customModule="Lottie">
                                 <rect key="frame" x="-100" y="-100" width="614" height="1096"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="29031-shake-phone"/>
@@ -34,7 +34,7 @@
 to
 Start</string>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7p-Cl-cY8">
@@ -47,7 +47,7 @@ Start</string>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ttM-4h-SKx" firstAttribute="centerY" secondItem="wKG-K6-KMs" secondAttribute="centerY" id="7tg-ME-QQ9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r7p-Cl-cY8" secondAttribute="trailing" id="Dz2-Xz-QJW"/>
