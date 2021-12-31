@@ -42,6 +42,13 @@
 		4F16BB9A277DC3EB003FF5BD /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BB99277DC3EB003FF5BD /* PopupView.swift */; };
 		4F16BB9C277EC675003FF5BD /* 16432-scan-face.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB9B277EC675003FF5BD /* 16432-scan-face.json */; };
 		4F16BB9E277ECA67003FF5BD /* 78286-fingerprint-scanner.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB9D277ECA67003FF5BD /* 78286-fingerprint-scanner.json */; };
+		4F16BBA3277F335C003FF5BD /* TorchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBA2277F335C003FF5BD /* TorchStoryboard.storyboard */; };
+		4F16BBA5277F3379003FF5BD /* TorchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBA4277F3379003FF5BD /* TorchVC.swift */; };
+		4F16BBA7277F34F6003FF5BD /* 77647-flashing-light-bulb.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBA6277F34F6003FF5BD /* 77647-flashing-light-bulb.json */; };
+		4F16BBA9277F358A003FF5BD /* 29415-bulb-flash.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBA8277F358A003FF5BD /* 29415-bulb-flash.json */; };
+		4F16BBAB277F4237003FF5BD /* 42266-roatating-light.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBAA277F4236003FF5BD /* 42266-roatating-light.json */; };
+		4F16BBAD277F437E003FF5BD /* 27365-weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBAC277F437E003FF5BD /* 27365-weather.json */; };
+		4F16BBAF277F48C8003FF5BD /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */; };
 		4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */; };
 		4F674AC5276EFE9A008C66C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */; };
 		4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC6276EFE9A008C66C0 /* ViewController.swift */; };
@@ -94,6 +101,13 @@
 		4F16BB99277DC3EB003FF5BD /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		4F16BB9B277EC675003FF5BD /* 16432-scan-face.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "16432-scan-face.json"; sourceTree = "<group>"; };
 		4F16BB9D277ECA67003FF5BD /* 78286-fingerprint-scanner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "78286-fingerprint-scanner.json"; sourceTree = "<group>"; };
+		4F16BBA2277F335C003FF5BD /* TorchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TorchStoryboard.storyboard; sourceTree = "<group>"; };
+		4F16BBA4277F3379003FF5BD /* TorchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchVC.swift; sourceTree = "<group>"; };
+		4F16BBA6277F34F6003FF5BD /* 77647-flashing-light-bulb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "77647-flashing-light-bulb.json"; sourceTree = "<group>"; };
+		4F16BBA8277F358A003FF5BD /* 29415-bulb-flash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "29415-bulb-flash.json"; sourceTree = "<group>"; };
+		4F16BBAA277F4236003FF5BD /* 42266-roatating-light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "42266-roatating-light.json"; sourceTree = "<group>"; };
+		4F16BBAC277F437E003FF5BD /* 27365-weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "27365-weather.json"; sourceTree = "<group>"; };
+		4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		4F674ABF276EFE9A008C66C0 /* proj181221.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj181221.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +157,7 @@
 				4F161C9727786C6A0098D856 /* Touch */,
 				4F161CA32778AD320098D856 /* Vibration */,
 				4F16BB92277DBE06003FF5BD /* Biometrics */,
+				4F16BBA1277F332B003FF5BD /* Torch */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -167,6 +182,7 @@
 				4F161C9E27788AD40098D856 /* UIView+FadeInOut.swift */,
 				4F161CA12778A2880098D856 /* Array+SafeIndex.swift */,
 				4F16BB88277D6050003FF5BD /* AVCaptureDevice+Flash.swift */,
+				4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +209,10 @@
 		4F161CA0277890400098D856 /* Lotties */ = {
 			isa = PBXGroup;
 			children = (
+				4F16BBAC277F437E003FF5BD /* 27365-weather.json */,
+				4F16BBAA277F4236003FF5BD /* 42266-roatating-light.json */,
+				4F16BBA8277F358A003FF5BD /* 29415-bulb-flash.json */,
+				4F16BBA6277F34F6003FF5BD /* 77647-flashing-light-bulb.json */,
 				4F16BB9D277ECA67003FF5BD /* 78286-fingerprint-scanner.json */,
 				4F16BB9B277EC675003FF5BD /* 16432-scan-face.json */,
 				4F16BB90277D7728003FF5BD /* 29031-shake-phone.json */,
@@ -235,6 +255,15 @@
 				4F16BB95277DC283003FF5BD /* BiometricsVC.swift */,
 			);
 			path = Biometrics;
+			sourceTree = "<group>";
+		};
+		4F16BBA1277F332B003FF5BD /* Torch */ = {
+			isa = PBXGroup;
+			children = (
+				4F16BBA2277F335C003FF5BD /* TorchStoryboard.storyboard */,
+				4F16BBA4277F3379003FF5BD /* TorchVC.swift */,
+			);
+			path = Torch;
 			sourceTree = "<group>";
 		};
 		4F674AB6276EFE9A008C66C0 = {
@@ -388,16 +417,20 @@
 				4F161CBA2778B5040098D856 /* 4842-mobile-icon-vibration-animation.json in Resources */,
 				4F161C922778658B0098D856 /* BrightnessStoryboard.storyboard in Resources */,
 				4F161CAE2778B00E0098D856 /* VibrationTVC.xib in Resources */,
+				4F16BBAD277F437E003FF5BD /* 27365-weather.json in Resources */,
 				4F161CB12778B0D60098D856 /* 40576-vibration.json in Resources */,
 				4F16BB8B277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json in Resources */,
 				4F161C9927786C880098D856 /* TouchStoryboard.storyboard in Resources */,
 				4F161CB62778B4060098D856 /* 64278-celular-vibrando.json in Resources */,
+				4F16BBA3277F335C003FF5BD /* TorchStoryboard.storyboard in Resources */,
+				4F16BBAB277F4237003FF5BD /* 42266-roatating-light.json in Resources */,
 				4F161CA52778AD610098D856 /* VibrationStoryboard.storyboard in Resources */,
 				4F161C8827782ECC0098D856 /* ColorStoryboard.storyboard in Resources */,
 				4F16BB94277DC25A003FF5BD /* BiometricsStoryboard.storyboard in Resources */,
 				4F674AD7276F01C5008C66C0 /* HomeVC.storyboard in Resources */,
 				4F674ACA276EFE9A008C66C0 /* Main.storyboard in Resources */,
 				4F161C9D277887300098D856 /* 32896-caution-wet-paint.json in Resources */,
+				4F16BBA9277F358A003FF5BD /* 29415-bulb-flash.json in Resources */,
 				4F16BB9C277EC675003FF5BD /* 16432-scan-face.json in Resources */,
 				4F16BB9E277ECA67003FF5BD /* 78286-fingerprint-scanner.json in Resources */,
 				4F161CB22778B0D60098D856 /* 85244-wave.json in Resources */,
@@ -405,6 +438,7 @@
 				4F16BB98277DC3BD003FF5BD /* PopupView.xib in Resources */,
 				4F16BB91277D7728003FF5BD /* 29031-shake-phone.json in Resources */,
 				4F16BB8F277D7692003FF5BD /* 10148-ringing-phone-animation.json in Resources */,
+				4F16BBA7277F34F6003FF5BD /* 77647-flashing-light-bulb.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +513,7 @@
 				4FDCA1F5276F0A38008D9868 /* HomeTVC.swift in Sources */,
 				4F161CA22778A2880098D856 /* Array+SafeIndex.swift in Sources */,
 				4F161CAD2778B00E0098D856 /* VibrationTVC.swift in Sources */,
+				4F16BBA5277F3379003FF5BD /* TorchVC.swift in Sources */,
 				4F161C632776DCCE0098D856 /* HomeVM.swift in Sources */,
 				4FA6A774276F0C9E00EE43E1 /* HomeVC.swift in Sources */,
 				4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */,
@@ -486,6 +521,7 @@
 				4F161C942778659E0098D856 /* BrightnessVC.swift in Sources */,
 				4F16BB9A277DC3EB003FF5BD /* PopupView.swift in Sources */,
 				4F161C8F27783E9F0098D856 /* ColorVM.swift in Sources */,
+				4F16BBAF277F48C8003FF5BD /* UIView+Border.swift in Sources */,
 				4F161C8B27782FF90098D856 /* UIColor+Random.swift in Sources */,
 				4F161C8D27783B260098D856 /* UIColor+NewColor.swift in Sources */,
 				4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */,
@@ -653,9 +689,11 @@
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Test biometrics";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -682,9 +720,11 @@
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Test biometrics";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

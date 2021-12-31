@@ -8,6 +8,7 @@
 import Foundation
 
 protocol HomeVMProtocol {
+    func countTotalItem() -> Int
     func getData(index: Int) -> HomeM?
 }
 
@@ -21,7 +22,8 @@ final class HomeVM: HomeVMProtocol {
         HomeM(icon: R.image.gvbefsfvaaev()!, label: "Brightness"),
         HomeM(icon: R.image.vegrsesagreas()!, label: "Touch"),
         HomeM(icon: R.image.cdsvaewvddws()!, label: "Vibration"),
-        HomeM(icon: R.image.fveargvesarbve()!, label: "Biometrics")
+        HomeM(icon: R.image.fveargvesarbve()!, label: "Biometrics"),
+        HomeM(icon: R.image.vdasvawrbvarw()!, label: "Torch")
     ]
     
     init() {
@@ -30,6 +32,10 @@ final class HomeVM: HomeVMProtocol {
     
     func getData(index: Int) -> HomeM? {
         return homeData[safeIndex: index]
+    }
+    
+    func countTotalItem() -> Int {
+        return homeData.count
     }
     
 }

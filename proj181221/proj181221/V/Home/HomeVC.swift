@@ -43,7 +43,7 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return vm.countTotalItem()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,6 +71,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         case 4:
             let vc = R.storyboard.biometricsStoryboard.biometricsVC()!
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 5:
+            let vc = R.storyboard.torchStoryboard.torchVC()!
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
