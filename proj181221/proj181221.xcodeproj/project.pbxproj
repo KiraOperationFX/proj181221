@@ -36,6 +36,12 @@
 		4F16BB8B277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB8A277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json */; };
 		4F16BB8F277D7692003FF5BD /* 10148-ringing-phone-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB8E277D7692003FF5BD /* 10148-ringing-phone-animation.json */; };
 		4F16BB91277D7728003FF5BD /* 29031-shake-phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB90277D7728003FF5BD /* 29031-shake-phone.json */; };
+		4F16BB94277DC25A003FF5BD /* BiometricsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB93277DC25A003FF5BD /* BiometricsStoryboard.storyboard */; };
+		4F16BB96277DC283003FF5BD /* BiometricsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BB95277DC283003FF5BD /* BiometricsVC.swift */; };
+		4F16BB98277DC3BD003FF5BD /* PopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB97277DC3BD003FF5BD /* PopupView.xib */; };
+		4F16BB9A277DC3EB003FF5BD /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BB99277DC3EB003FF5BD /* PopupView.swift */; };
+		4F16BB9C277EC675003FF5BD /* 16432-scan-face.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB9B277EC675003FF5BD /* 16432-scan-face.json */; };
+		4F16BB9E277ECA67003FF5BD /* 78286-fingerprint-scanner.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BB9D277ECA67003FF5BD /* 78286-fingerprint-scanner.json */; };
 		4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */; };
 		4F674AC5276EFE9A008C66C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */; };
 		4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC6276EFE9A008C66C0 /* ViewController.swift */; };
@@ -82,6 +88,12 @@
 		4F16BB8A277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "74906-rings-circles-wave-animation.json"; sourceTree = "<group>"; };
 		4F16BB8E277D7692003FF5BD /* 10148-ringing-phone-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "10148-ringing-phone-animation.json"; sourceTree = "<group>"; };
 		4F16BB90277D7728003FF5BD /* 29031-shake-phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "29031-shake-phone.json"; sourceTree = "<group>"; };
+		4F16BB93277DC25A003FF5BD /* BiometricsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiometricsStoryboard.storyboard; sourceTree = "<group>"; };
+		4F16BB95277DC283003FF5BD /* BiometricsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsVC.swift; sourceTree = "<group>"; };
+		4F16BB97277DC3BD003FF5BD /* PopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupView.xib; sourceTree = "<group>"; };
+		4F16BB99277DC3EB003FF5BD /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		4F16BB9B277EC675003FF5BD /* 16432-scan-face.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "16432-scan-face.json"; sourceTree = "<group>"; };
+		4F16BB9D277ECA67003FF5BD /* 78286-fingerprint-scanner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "78286-fingerprint-scanner.json"; sourceTree = "<group>"; };
 		4F674ABF276EFE9A008C66C0 /* proj181221.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj181221.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +142,7 @@
 				4F161C90277865640098D856 /* Brightness */,
 				4F161C9727786C6A0098D856 /* Touch */,
 				4F161CA32778AD320098D856 /* Vibration */,
+				4F16BB92277DBE06003FF5BD /* Biometrics */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -180,6 +193,8 @@
 		4F161CA0277890400098D856 /* Lotties */ = {
 			isa = PBXGroup;
 			children = (
+				4F16BB9D277ECA67003FF5BD /* 78286-fingerprint-scanner.json */,
+				4F16BB9B277EC675003FF5BD /* 16432-scan-face.json */,
 				4F16BB90277D7728003FF5BD /* 29031-shake-phone.json */,
 				4F16BB8E277D7692003FF5BD /* 10148-ringing-phone-animation.json */,
 				4F16BB8A277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json */,
@@ -211,6 +226,15 @@
 				4F161CAC2778B00E0098D856 /* VibrationTVC.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		4F16BB92277DBE06003FF5BD /* Biometrics */ = {
+			isa = PBXGroup;
+			children = (
+				4F16BB93277DC25A003FF5BD /* BiometricsStoryboard.storyboard */,
+				4F16BB95277DC283003FF5BD /* BiometricsVC.swift */,
+			);
+			path = Biometrics;
 			sourceTree = "<group>";
 		};
 		4F674AB6276EFE9A008C66C0 = {
@@ -252,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				4F161C8927782FC90098D856 /* Extensions */,
+				4F16BB97277DC3BD003FF5BD /* PopupView.xib */,
+				4F16BB99277DC3EB003FF5BD /* PopupView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -368,11 +394,15 @@
 				4F161CB62778B4060098D856 /* 64278-celular-vibrando.json in Resources */,
 				4F161CA52778AD610098D856 /* VibrationStoryboard.storyboard in Resources */,
 				4F161C8827782ECC0098D856 /* ColorStoryboard.storyboard in Resources */,
+				4F16BB94277DC25A003FF5BD /* BiometricsStoryboard.storyboard in Resources */,
 				4F674AD7276F01C5008C66C0 /* HomeVC.storyboard in Resources */,
 				4F674ACA276EFE9A008C66C0 /* Main.storyboard in Resources */,
 				4F161C9D277887300098D856 /* 32896-caution-wet-paint.json in Resources */,
+				4F16BB9C277EC675003FF5BD /* 16432-scan-face.json in Resources */,
+				4F16BB9E277ECA67003FF5BD /* 78286-fingerprint-scanner.json in Resources */,
 				4F161CB22778B0D60098D856 /* 85244-wave.json in Resources */,
 				4FDCA1F6276F0A38008D9868 /* HomeTVC.xib in Resources */,
+				4F16BB98277DC3BD003FF5BD /* PopupView.xib in Resources */,
 				4F16BB91277D7728003FF5BD /* 29031-shake-phone.json in Resources */,
 				4F16BB8F277D7692003FF5BD /* 10148-ringing-phone-animation.json in Resources */,
 			);
@@ -454,6 +484,7 @@
 				4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */,
 				4F161C9F27788AD40098D856 /* UIView+FadeInOut.swift in Sources */,
 				4F161C942778659E0098D856 /* BrightnessVC.swift in Sources */,
+				4F16BB9A277DC3EB003FF5BD /* PopupView.swift in Sources */,
 				4F161C8F27783E9F0098D856 /* ColorVM.swift in Sources */,
 				4F161C8B27782FF90098D856 /* UIColor+Random.swift in Sources */,
 				4F161C8D27783B260098D856 /* UIColor+NewColor.swift in Sources */,
@@ -461,6 +492,7 @@
 				4F161CA72778AD7A0098D856 /* VibrationVC.swift in Sources */,
 				4F161C9B27786C9A0098D856 /* TouchVC.swift in Sources */,
 				4F161C96277865B10098D856 /* BrightnessVM.swift in Sources */,
+				4F16BB96277DC283003FF5BD /* BiometricsVC.swift in Sources */,
 				4FDCA1ED276F04F8008D9868 /* R.generated.swift in Sources */,
 				4F161C612776DC460098D856 /* HomeM.swift in Sources */,
 				4F161C8627782EAB0098D856 /* ColorVC.swift in Sources */,

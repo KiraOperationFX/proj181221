@@ -20,7 +20,8 @@ final class HomeVM: HomeVMProtocol {
         HomeM(icon: R.image.vfdsbvbefs()!, label: "Color Titration"),
         HomeM(icon: R.image.gvbefsfvaaev()!, label: "Brightness"),
         HomeM(icon: R.image.vegrsesagreas()!, label: "Touch"),
-        HomeM(icon: R.image.cdsvaewvddws()!, label: "Vibration")
+        HomeM(icon: R.image.cdsvaewvddws()!, label: "Vibration"),
+        HomeM(icon: R.image.fveargvesarbve()!, label: "Biometrics")
     ]
     
     init() {
