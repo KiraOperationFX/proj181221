@@ -36,10 +36,7 @@ class HomeVC: BaseViewController {
             $0?.play(completion: nil)
         }
     }
-    
-    @IBAction func tapBtn(_ sender: Any) {
-        print("aaaaaa")
-    }
+
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {

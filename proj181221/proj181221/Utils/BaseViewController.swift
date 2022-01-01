@@ -11,16 +11,38 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        checkToShowAds()
     }
     
-    func insertBottomAds() {
+    func checkToShowAds() {
+        RemoteConfigManager.shared.fetchRemoteConfig()
+        if let build = Int(Bundle.main.buildVersionNumber ?? "0"),
+           let buildShowAds = Int(RemoteConfigManager.shared.getValue(fromKey: .buildShowAds)) {
+            print("build app: \(build)")
+            print("build cfg: \(buildShowAds)")
+            
+            if build <= buildShowAds {
+                showBannerAds()
+            } else {
+                hideBannerAds()
+            }
+        }
+    }
+    
+    func showBannerAds() {
         let viewAds = UIView()
+        viewAds.tag = 696969
         self.view.addSubview(viewAds)
         self.view.bringSubviewToFront(viewAds)
         viewAds.backgroundColor = .blue
@@ -31,5 +53,11 @@ class BaseViewController: UIViewController {
             viewAds.heightAnchor.constraint(equalToConstant: 50),
             viewAds.widthAnchor.constraint(equalToConstant: 320)
         ])
+    }
+    
+    func hideBannerAds() {
+        if let view = self.view.viewWithTag(696969) {
+            view.removeFromSuperview()
+        }
     }
 }

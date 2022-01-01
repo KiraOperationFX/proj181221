@@ -11,4 +11,8 @@ target 'proj181221' do
   pod 'UIColor_Hex_Swift'
   pod 'SwiftyDraw'
   pod 'FeedbackEffect'
+
+  # Firebase
+  pod 'Firebase/Analytics'
+  pod 'FirebaseRemoteConfig'
 end

@@ -53,6 +53,9 @@
 		4F16BBB5277FFF52003FF5BD /* RotateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB4277FFF52003FF5BD /* RotateVC.swift */; };
 		4F16BBB727801206003FF5BD /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB627801205003FF5BD /* Gravity.swift */; };
 		4F16BBB9278051FF003FF5BD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB8278051FF003FF5BD /* BaseViewController.swift */; };
+		4F16BBBB2780600C003FF5BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */; };
+		4F400997278065B200713DEF /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F400996278065B200713DEF /* RemoteConfigManager.swift */; };
+		4F4009992780707500713DEF /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4009982780707500713DEF /* Bundle+Version.swift */; };
 		4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */; };
 		4F674AC5276EFE9A008C66C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */; };
 		4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC6276EFE9A008C66C0 /* ViewController.swift */; };
@@ -116,6 +119,9 @@
 		4F16BBB4277FFF52003FF5BD /* RotateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateVC.swift; sourceTree = "<group>"; };
 		4F16BBB627801205003FF5BD /* Gravity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
 		4F16BBB8278051FF003FF5BD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F400996278065B200713DEF /* RemoteConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
+		4F4009982780707500713DEF /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
 		4F674ABF276EFE9A008C66C0 /* proj181221.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj181221.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 				4F161CA12778A2880098D856 /* Array+SafeIndex.swift */,
 				4F16BB88277D6050003FF5BD /* AVCaptureDevice+Flash.swift */,
 				4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */,
+				4F4009982780707500713DEF /* Bundle+Version.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,6 +334,7 @@
 				4F16BB97277DC3BD003FF5BD /* PopupView.xib */,
 				4F16BB99277DC3EB003FF5BD /* PopupView.swift */,
 				4F16BBB8278051FF003FF5BD /* BaseViewController.swift */,
+				4F400996278065B200713DEF /* RemoteConfigManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -343,6 +351,7 @@
 		4FDCA1EB276F04E0008D9868 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */,
 				4F161CA0277890400098D856 /* Lotties */,
 				4FDCA1EC276F04F8008D9868 /* R.generated.swift */,
 			);
@@ -448,6 +457,7 @@
 				4F161CA52778AD610098D856 /* VibrationStoryboard.storyboard in Resources */,
 				4F161C8827782ECC0098D856 /* ColorStoryboard.storyboard in Resources */,
 				4F16BB94277DC25A003FF5BD /* BiometricsStoryboard.storyboard in Resources */,
+				4F16BBBB2780600C003FF5BD /* GoogleService-Info.plist in Resources */,
 				4F674AD7276F01C5008C66C0 /* HomeVC.storyboard in Resources */,
 				4F674ACA276EFE9A008C66C0 /* Main.storyboard in Resources */,
 				4F161C9D277887300098D856 /* 32896-caution-wet-paint.json in Resources */,
@@ -534,6 +544,7 @@
 				4FDCA1F5276F0A38008D9868 /* HomeTVC.swift in Sources */,
 				4F161CA22778A2880098D856 /* Array+SafeIndex.swift in Sources */,
 				4F161CAD2778B00E0098D856 /* VibrationTVC.swift in Sources */,
+				4F400997278065B200713DEF /* RemoteConfigManager.swift in Sources */,
 				4F16BBA5277F3379003FF5BD /* TorchVC.swift in Sources */,
 				4F161C632776DCCE0098D856 /* HomeVM.swift in Sources */,
 				4F16BBB9278051FF003FF5BD /* BaseViewController.swift in Sources */,
@@ -556,6 +567,7 @@
 				4FDCA1ED276F04F8008D9868 /* R.generated.swift in Sources */,
 				4F161C612776DC460098D856 /* HomeM.swift in Sources */,
 				4F161C8627782EAB0098D856 /* ColorVC.swift in Sources */,
+				4F4009992780707500713DEF /* Bundle+Version.swift in Sources */,
 				4FA6A779276F142200EE43E1 /* NSObject+ClassName.swift in Sources */,
 				4F16BB89277D6050003FF5BD /* AVCaptureDevice+Flash.swift in Sources */,
 				4F161CA92778AD8D0098D856 /* VibrationVM.swift in Sources */,
@@ -709,7 +721,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20211218;
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;
@@ -740,7 +752,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20211218;
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;

@@ -22,6 +22,9 @@ class ColorVC: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIScreen.main.brightness = CGFloat(1.0)
+        
+        let a = RemoteConfigManager.shared.getBoolValue(fromKey: .showAdsBanner)
+        print("mmmmmmmmmm \(a)")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
