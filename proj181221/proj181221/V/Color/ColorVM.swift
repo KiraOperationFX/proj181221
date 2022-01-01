@@ -12,7 +12,7 @@ protocol ColorVMProtocol {
 }
 
 protocol ColorVMEvent: AnyObject {
-    
+    func showAds()
 }
 
 final class ColorVM: ColorVMProtocol {
@@ -22,6 +22,13 @@ final class ColorVM: ColorVMProtocol {
             index = (index >= colorHex.count) ? 0 : index
         }
     }
+    
+    weak var delegate: ColorVMEvent?
+    
+    init(delegate: ColorVMEvent) {
+        self.delegate = delegate
+    }
+    
     private var colorHex: [String] = [
         "#FFFF00FF",
         "#0000FFFF",
@@ -133,6 +140,11 @@ final class ColorVM: ColorVMProtocol {
     func getColor() -> String {
         let nextIndex = self.index
         index += 1
+        
+        if index%10 == 0 {
+            delegate?.showAds()
+        }
+            
         return colorHex[nextIndex]
     }
 }

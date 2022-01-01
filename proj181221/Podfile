@@ -11,6 +11,7 @@ target 'proj181221' do
   pod 'UIColor_Hex_Swift'
   pod 'SwiftyDraw'
   pod 'FeedbackEffect'
+  pod 'Google-Mobile-Ads-SDK'
 
   # Firebase
   pod 'Firebase/Analytics'

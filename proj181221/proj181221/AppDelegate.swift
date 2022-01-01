@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         RemoteConfigManager.shared.fetchRemoteConfig()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         return true
     }

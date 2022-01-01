@@ -19,6 +19,7 @@ class HomeVC: BaseViewController {
         super.viewDidLoad()
         
         config()
+        bannerAdsView.isHidden = true
     }
     
     private func config() {

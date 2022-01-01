@@ -12,11 +12,13 @@ class ColorVC: BaseViewController {
     @IBOutlet weak var uvBackground: UIView!
     @IBOutlet weak var lblHexColor: UILabel!
     @IBOutlet weak var lblColorName: UILabel!
-    lazy private var vm: ColorVMProtocol = ColorVM()
+    lazy private var vm: ColorVMProtocol = ColorVM(delegate: self)
     private let currentBrightness = UIScreen.main.brightness
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerAdsView.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,4 +39,12 @@ class ColorVC: BaseViewController {
         lblColorName.text = color.accessibilityName
     }
 
+}
+
+extension ColorVC: ColorVMEvent {
+    
+    // Show ads each 10 taps
+    func showAds() {
+        showAdInterstitial(vc: self)
+    }
 }

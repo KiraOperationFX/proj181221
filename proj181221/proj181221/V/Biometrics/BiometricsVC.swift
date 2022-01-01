@@ -39,20 +39,22 @@ class BiometricsVC: BaseViewController {
         // If biometric avaiable, setup authen biometric
         if LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { [weak self] success, evaluateError in
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { [weak self] in
+                    guard let wSelf = self else { return }
                     switch success {
                     case true:
                         if context.evaluatedPolicyDomainState == nil {
                             /// Nhập đúng passcode của máy khi sai nhiều lần liên tiếp. OS sẽ show màn hình passcode của thiết bị.
                             /// Nếu nhập đúng thì sẽ vào đây và xử lý logic tại đây.
-                            self?.navigationController?.popViewController(animated: true)
+                            wSelf.navigationController?.popViewController(animated: true)
                         } else {
                             /// Xác thực thành công. Xử lý logic
                             if context.biometryType == .faceID {
-                                self?.didFaceIdDone()
+                                wSelf.didFaceIdDone()
                             } else  {
-                                self?.didTouchIdDone()
+                                wSelf.didTouchIdDone()
                             }
+                            wSelf.showAdInterstitial(vc: wSelf, deadline: .now()+3)
                         }
                     case false:
                         /// Xác thực thất bại. Xử lý logic thất bại

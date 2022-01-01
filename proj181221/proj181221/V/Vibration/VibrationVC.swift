@@ -56,20 +56,20 @@ class VibrationVC: BaseViewController {
             uvAnimation.play(completion: nil)
             uvAnimationCenter.play(completion: nil)
             
-        self.workItem = DispatchWorkItem {
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
-        }
-        
-            timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
-            DispatchQueue.global().async(execute: self.workItem!)
+            self.workItem = DispatchWorkItem {
+                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+            }
             
-        }
+            timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
+                DispatchQueue.global().async(execute: self.workItem!)
+            }
         } else {
             lblLabel.text = "Tap\nto\nStart"
             distroy()
             uvAnimation.alpha = 0
             uvAnimation.stop()
             uvAnimationCenter.stop()
+            self.showAdInterstitial(vc: self, deadline: .now()+3)
         }
     }
     

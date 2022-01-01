@@ -171,10 +171,10 @@
 				4F161C8227782E6C0098D856 /* Color */,
 				4F161C90277865640098D856 /* Brightness */,
 				4F161C9727786C6A0098D856 /* Touch */,
-				4F161CA32778AD320098D856 /* Vibration */,
-				4F16BB92277DBE06003FF5BD /* Biometrics */,
-				4F16BBA1277F332B003FF5BD /* Torch */,
 				4F16BBB1277FFEC9003FF5BD /* Rorate */,
+				4F16BB92277DBE06003FF5BD /* Biometrics */,
+				4F161CA32778AD320098D856 /* Vibration */,
+				4F16BBA1277F332B003FF5BD /* Torch */,
 			);
 			path = V;
 			sourceTree = "<group>";
