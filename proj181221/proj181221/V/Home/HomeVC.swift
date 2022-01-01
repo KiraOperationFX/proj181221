@@ -11,13 +11,14 @@ import Lottie
 class HomeVC: BaseViewController {
     
     @IBOutlet weak var uvTopAnimation: AnimationView!
-    @IBOutlet weak var uvHeaderAnimation: AnimationView!
     @IBOutlet weak var tbvContent: UITableView!
     
     lazy var vm: HomeVMProtocol = HomeVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(backFromBackground), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         config()
     }
@@ -29,12 +30,20 @@ class HomeVC: BaseViewController {
         tbvContent.contentInset.bottom = 50
     }
     
+    @objc private func backFromBackground() {
+        print("back from background")
+        self.navigationController?.popToRootViewController(animated: true)
+        playAnimation()
+    }
+    
+    private func playAnimation() {
+        uvTopAnimation.loopMode = .loop
+        uvTopAnimation.play(completion: nil)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        [uvTopAnimation, uvHeaderAnimation].forEach {
-            $0?.loopMode = .loop
-            $0?.play(completion: nil)
-        }
+        playAnimation()
     }
 
 }

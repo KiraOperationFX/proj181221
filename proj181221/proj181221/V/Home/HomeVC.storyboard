@@ -42,22 +42,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
-                            <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhs-uu-pUY" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="-20" width="414" height="200"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="sUg-n8-dSm"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.91372555489999996" green="0.91372555489999996" blue="0.91372555489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="lhs-uu-pUY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2W8-L0-bWT"/>
                             <constraint firstAttribute="trailing" secondItem="b3l-2m-Mpm" secondAttribute="trailing" id="4hx-d9-Nst"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="b3l-2m-Mpm" secondAttribute="bottom" id="X4e-Em-BgG"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lhs-uu-pUY" secondAttribute="trailing" id="Y9g-6o-xbc"/>
-                            <constraint firstItem="lhs-uu-pUY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="-20" id="b8e-jP-6u9"/>
                             <constraint firstItem="b3l-2m-Mpm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bme-dg-c1t"/>
                             <constraint firstItem="b3l-2m-Mpm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dFM-OF-7eq"/>
                             <constraint firstItem="pf6-8r-dv9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eDy-qT-3Gn"/>
@@ -67,7 +57,6 @@
                     </view>
                     <connections>
                         <outlet property="tbvContent" destination="9ji-Xn-BtM" id="SSg-HU-509"/>
-                        <outlet property="uvHeaderAnimation" destination="lhs-uu-pUY" id="feU-wu-VrY"/>
                         <outlet property="uvTopAnimation" destination="pf6-8r-dv9" id="Nwu-30-xVv"/>
                     </connections>
                 </viewController>
@@ -77,7 +66,6 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="lhs-uu-pUY"/>
         <designable name="pf6-8r-dv9"/>
     </designables>
 </document>
