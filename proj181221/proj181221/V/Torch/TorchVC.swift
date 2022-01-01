@@ -18,6 +18,11 @@ class TorchVC: UIViewController {
     @IBOutlet weak var lblCurrentLevel: UILabel!
     @IBOutlet weak var lblInfor: UILabel!
     
+    private var currentValue: Float = 0.5 {
+        didSet {
+            updateUI()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +31,7 @@ class TorchVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         slider.setValue(0.5, animated: false)
-        toggleFlash(level: 0.5)
+        currentValue = 0.5
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -67,25 +72,23 @@ class TorchVC: UIViewController {
         }
     }
     
-    
-    @IBAction func didChangeSlider(_ sender: UISlider) {
-        let currentValue = Int(sender.value*100)
-        let floatValue = Float(sender.value)
-        let level = (floatValue <= 0.1) ? 0 : floatValue
-        toggleFlash(level: level)
-        DispatchQueue.main.async { [weak self] in
-            self?.lblCurrentLevel.text = "\(currentValue)"
-            self?.uvAnimation2.alpha = CGFloat(sender.value)
-            if currentValue == 0 {
-                self?.lblCurrentLevel.isHidden = true
-                self?.lblInfor.text = "Rear LED is OFF"
-            } else {
-                self?.lblCurrentLevel.isHidden = false
-                self?.lblInfor.text = "Rear LED is ON ⚡️"
-            }
+    private func updateUI() {
+        lblCurrentLevel.text = "\(Int(currentValue*100))"
+        uvAnimation2.alpha = CGFloat(currentValue)
+        toggleFlash(level: currentValue)
+        if currentValue == 0 {
+            lblCurrentLevel.isHidden = true
+            lblInfor.text = "Rear LED is OFF"
+        } else {
+            lblCurrentLevel.isHidden = false
+            lblInfor.text = "Rear LED is ON ⚡️"
         }
-        
     }
     
-
+    @IBAction func didChangeSlider(_ sender: UISlider) {
+        DispatchQueue.main.async { [weak self] in
+            self?.currentValue = Float(sender.value)
+        }
+    }
+    
 }
