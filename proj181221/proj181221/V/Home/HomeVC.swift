@@ -72,11 +72,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         case 4: // Biometrics
             let vc = R.storyboard.biometricsStoryboard.biometricsVC()!
             self.navigationController?.pushViewController(vc, animated: true)
-        case 5: // Torch
-            let vc = R.storyboard.torchStoryboard.torchVC()!
-            self.navigationController?.pushViewController(vc, animated: true)
-        case 6: // Vibration
+        case 5: // Vibration
             let vc = R.storyboard.vibrationStoryboard.vibrationVC()!
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 6: // Torch
+            let vc = R.storyboard.torchStoryboard.torchVC()!
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
