@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RotateVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RotateVC" id="Y6W-OH-hqX" customClass="RotateVC" customModule="proj181221" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b2" translatesAutoresizingMaskIntoConstraints="NO" id="XFL-Cj-aqY">
+                                <rect key="frame" x="67" y="317" width="82" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b3" translatesAutoresizingMaskIntoConstraints="NO" id="5tX-8S-dOf">
+                                <rect key="frame" x="133" y="611" width="80" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b4" translatesAutoresizingMaskIntoConstraints="NO" id="HvG-Mv-v8l">
+                                <rect key="frame" x="314" y="493" width="91" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b5" translatesAutoresizingMaskIntoConstraints="NO" id="iNO-in-6bs">
+                                <rect key="frame" x="314" y="611" width="80" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b6" translatesAutoresizingMaskIntoConstraints="NO" id="89S-Vg-FTy">
+                                <rect key="frame" x="37" y="427" width="57" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b7" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-Bf-5Le">
+                                <rect key="frame" x="314" y="451" width="35" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b8" translatesAutoresizingMaskIntoConstraints="NO" id="ROE-nV-3X1">
+                                <rect key="frame" x="20" y="595" width="57" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b9" translatesAutoresizingMaskIntoConstraints="NO" id="RZb-jV-czV">
+                                <rect key="frame" x="140" y="254" width="67" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b10" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-ng-EbW">
+                                <rect key="frame" x="314" y="284" width="64" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b11" translatesAutoresizingMaskIntoConstraints="NO" id="O7c-7q-Xz8">
+                                <rect key="frame" x="257" y="134" width="59" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b12" translatesAutoresizingMaskIntoConstraints="NO" id="GoZ-fC-RSb">
+                                <rect key="frame" x="87" y="71" width="91" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's rotate your device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6A-gL-9Mr">
+                                <rect key="frame" x="82.5" y="438" width="249.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b1" translatesAutoresizingMaskIntoConstraints="NO" id="mvP-aP-8wi">
+                                <rect key="frame" x="200" y="491" width="76" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x6A-gL-9Mr" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="L8x-Et-q6C"/>
+                            <constraint firstItem="x6A-gL-9Mr" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ZEs-De-jNO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="b1" destination="mvP-aP-8wi" id="JPX-BW-vya"/>
+                        <outlet property="b10" destination="RjV-ng-EbW" id="9W1-9B-kAY"/>
+                        <outlet property="b11" destination="O7c-7q-Xz8" id="YaN-IR-fm5"/>
+                        <outlet property="b12" destination="GoZ-fC-RSb" id="WEf-1z-6Fh"/>
+                        <outlet property="b2" destination="XFL-Cj-aqY" id="bPI-tH-ScB"/>
+                        <outlet property="b3" destination="5tX-8S-dOf" id="O61-FL-9Ig"/>
+                        <outlet property="b4" destination="HvG-Mv-v8l" id="mnz-XJ-jRV"/>
+                        <outlet property="b5" destination="iNO-in-6bs" id="cph-lP-QfK"/>
+                        <outlet property="b6" destination="89S-Vg-FTy" id="mpq-bR-xX7"/>
+                        <outlet property="b7" destination="rMT-Bf-5Le" id="y6S-n8-7bI"/>
+                        <outlet property="b8" destination="ROE-nV-3X1" id="D9s-yi-5YZ"/>
+                        <outlet property="b9" destination="RZb-jV-czV" id="5ta-hZ-JR4"/>
+                        <outlet property="lblInfor" destination="x6A-gL-9Mr" id="clo-Qc-vC6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="b1" width="128" height="128"/>
+        <image name="b10" width="128" height="128"/>
+        <image name="b11" width="128" height="128"/>
+        <image name="b12" width="128" height="128"/>
+        <image name="b2" width="128" height="128"/>
+        <image name="b3" width="128" height="128"/>
+        <image name="b4" width="128" height="128"/>
+        <image name="b5" width="128" height="128"/>
+        <image name="b6" width="128" height="128"/>
+        <image name="b7" width="128" height="128"/>
+        <image name="b8" width="128" height="128"/>
+        <image name="b9" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

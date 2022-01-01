@@ -49,6 +49,9 @@
 		4F16BBAB277F4237003FF5BD /* 42266-roatating-light.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBAA277F4236003FF5BD /* 42266-roatating-light.json */; };
 		4F16BBAD277F437E003FF5BD /* 27365-weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBAC277F437E003FF5BD /* 27365-weather.json */; };
 		4F16BBAF277F48C8003FF5BD /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */; };
+		4F16BBB3277FFEF4003FF5BD /* RotateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBB2277FFEF4003FF5BD /* RotateStoryboard.storyboard */; };
+		4F16BBB5277FFF52003FF5BD /* RotateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB4277FFF52003FF5BD /* RotateVC.swift */; };
+		4F16BBB727801206003FF5BD /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB627801205003FF5BD /* Gravity.swift */; };
 		4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */; };
 		4F674AC5276EFE9A008C66C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */; };
 		4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC6276EFE9A008C66C0 /* ViewController.swift */; };
@@ -108,6 +111,9 @@
 		4F16BBAA277F4236003FF5BD /* 42266-roatating-light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "42266-roatating-light.json"; sourceTree = "<group>"; };
 		4F16BBAC277F437E003FF5BD /* 27365-weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "27365-weather.json"; sourceTree = "<group>"; };
 		4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		4F16BBB2277FFEF4003FF5BD /* RotateStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RotateStoryboard.storyboard; sourceTree = "<group>"; };
+		4F16BBB4277FFF52003FF5BD /* RotateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateVC.swift; sourceTree = "<group>"; };
+		4F16BBB627801205003FF5BD /* Gravity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
 		4F674ABF276EFE9A008C66C0 /* proj181221.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj181221.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 				4F161CA32778AD320098D856 /* Vibration */,
 				4F16BB92277DBE06003FF5BD /* Biometrics */,
 				4F16BBA1277F332B003FF5BD /* Torch */,
+				4F16BBB1277FFEC9003FF5BD /* Rorate */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -264,6 +271,16 @@
 				4F16BBA4277F3379003FF5BD /* TorchVC.swift */,
 			);
 			path = Torch;
+			sourceTree = "<group>";
+		};
+		4F16BBB1277FFEC9003FF5BD /* Rorate */ = {
+			isa = PBXGroup;
+			children = (
+				4F16BBB2277FFEF4003FF5BD /* RotateStoryboard.storyboard */,
+				4F16BBB4277FFF52003FF5BD /* RotateVC.swift */,
+				4F16BBB627801205003FF5BD /* Gravity.swift */,
+			);
+			path = Rorate;
 			sourceTree = "<group>";
 		};
 		4F674AB6276EFE9A008C66C0 = {
@@ -419,6 +436,7 @@
 				4F161CAE2778B00E0098D856 /* VibrationTVC.xib in Resources */,
 				4F16BBAD277F437E003FF5BD /* 27365-weather.json in Resources */,
 				4F161CB12778B0D60098D856 /* 40576-vibration.json in Resources */,
+				4F16BBB3277FFEF4003FF5BD /* RotateStoryboard.storyboard in Resources */,
 				4F16BB8B277D70E9003FF5BD /* 74906-rings-circles-wave-animation.json in Resources */,
 				4F161C9927786C880098D856 /* TouchStoryboard.storyboard in Resources */,
 				4F161CB62778B4060098D856 /* 64278-celular-vibrando.json in Resources */,
@@ -515,9 +533,11 @@
 				4F161CAD2778B00E0098D856 /* VibrationTVC.swift in Sources */,
 				4F16BBA5277F3379003FF5BD /* TorchVC.swift in Sources */,
 				4F161C632776DCCE0098D856 /* HomeVM.swift in Sources */,
+				4F16BBB5277FFF52003FF5BD /* RotateVC.swift in Sources */,
 				4FA6A774276F0C9E00EE43E1 /* HomeVC.swift in Sources */,
 				4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */,
 				4F161C9F27788AD40098D856 /* UIView+FadeInOut.swift in Sources */,
+				4F16BBB727801206003FF5BD /* Gravity.swift in Sources */,
 				4F161C942778659E0098D856 /* BrightnessVC.swift in Sources */,
 				4F16BB9A277DC3EB003FF5BD /* PopupView.swift in Sources */,
 				4F161C8F27783E9F0098D856 /* ColorVM.swift in Sources */,

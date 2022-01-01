@@ -21,9 +21,10 @@ final class HomeVM: HomeVMProtocol {
         HomeM(icon: R.image.vfdsbvbefs()!, label: "Color Titration"),
         HomeM(icon: R.image.gvbefsfvaaev()!, label: "Brightness"),
         HomeM(icon: R.image.vegrsesagreas()!, label: "Touch"),
-        HomeM(icon: R.image.cdsvaewvddws()!, label: "Vibration"),
+        HomeM(icon: R.image.vfdbvsfbvfsbrs()!, label: "Gravity"),
         HomeM(icon: R.image.fveargvesarbve()!, label: "Biometrics"),
-        HomeM(icon: R.image.vdasvawrbvarw()!, label: "Torch")
+        HomeM(icon: R.image.vdasvawrbvarw()!, label: "Torch"),
+        HomeM(icon: R.image.cdsvaewvddws()!, label: "Vibration")
     ]
     
     init() {
