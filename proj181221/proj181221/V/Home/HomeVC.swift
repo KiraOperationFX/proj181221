@@ -18,8 +18,6 @@ class HomeVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(backFromBackground), name: UIApplication.willEnterForegroundNotification, object: nil)
-        
         config()
     }
     
@@ -30,12 +28,6 @@ class HomeVC: BaseViewController {
         tbvContent.contentInset.bottom = 50
     }
     
-    @objc private func backFromBackground() {
-        print("back from background")
-        self.navigationController?.popToRootViewController(animated: true)
-        playAnimation()
-    }
-    
     private func playAnimation() {
         uvTopAnimation.loopMode = .loop
         uvTopAnimation.play(completion: nil)
@@ -43,6 +35,11 @@ class HomeVC: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        playAnimation()
+    }
+    
+    override func backFromBackground() {
+        self.navigationController?.popToRootViewController(animated: true)
         playAnimation()
     }
 

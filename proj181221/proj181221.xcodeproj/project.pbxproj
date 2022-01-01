@@ -56,6 +56,7 @@
 		4F16BBBB2780600C003FF5BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */; };
 		4F400997278065B200713DEF /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F400996278065B200713DEF /* RemoteConfigManager.swift */; };
 		4F4009992780707500713DEF /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4009982780707500713DEF /* Bundle+Version.swift */; };
+		4F40099B2780890300713DEF /* UIAlertController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40099A2780890200713DEF /* UIAlertController+Create.swift */; };
 		4F674AC3276EFE9A008C66C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */; };
 		4F674AC5276EFE9A008C66C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */; };
 		4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674AC6276EFE9A008C66C0 /* ViewController.swift */; };
@@ -122,6 +123,7 @@
 		4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F400996278065B200713DEF /* RemoteConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		4F4009982780707500713DEF /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
+		4F40099A2780890200713DEF /* UIAlertController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Create.swift"; sourceTree = "<group>"; };
 		4F674ABF276EFE9A008C66C0 /* proj181221.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj181221.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F674AC2276EFE9A008C66C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F674AC4276EFE9A008C66C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				4F16BB88277D6050003FF5BD /* AVCaptureDevice+Flash.swift */,
 				4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */,
 				4F4009982780707500713DEF /* Bundle+Version.swift */,
+				4F40099A2780890200713DEF /* UIAlertController+Create.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				4F161C632776DCCE0098D856 /* HomeVM.swift in Sources */,
 				4F16BBB9278051FF003FF5BD /* BaseViewController.swift in Sources */,
 				4F16BBB5277FFF52003FF5BD /* RotateVC.swift in Sources */,
+				4F40099B2780890300713DEF /* UIAlertController+Create.swift in Sources */,
 				4FA6A774276F0C9E00EE43E1 /* HomeVC.swift in Sources */,
 				4F674AC7276EFE9A008C66C0 /* ViewController.swift in Sources */,
 				4F161C9F27788AD40098D856 /* UIView+FadeInOut.swift in Sources */,
@@ -725,6 +729,7 @@
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "A2Z Check";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Test biometrics";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -756,6 +761,7 @@
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "A2Z Check";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Test biometrics";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
