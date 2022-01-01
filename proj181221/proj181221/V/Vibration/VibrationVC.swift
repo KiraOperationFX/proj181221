@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 import AudioToolbox
 
-class VibrationVC: UIViewController {
+class VibrationVC: BaseViewController {
     
     @IBOutlet weak var uvAnimation: AnimationView!
     @IBOutlet weak var uvAnimationCenter: AnimationView!

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +26,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b3l-2m-Mpm">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmy-Hu-1K2">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -36,46 +35,10 @@
                                             <constraint firstAttribute="height" constant="150" id="ZFZ-kL-v7C"/>
                                         </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9ji-Xn-BtM">
-                                        <rect key="frame" x="0.0" y="150" width="414" height="652"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9ji-Xn-BtM">
+                                        <rect key="frame" x="0.0" y="150" width="414" height="668"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X10-jZ-vwc" userLabel="QC">
-                                        <rect key="frame" x="0.0" y="802" width="414" height="50"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBC-FG-m7F">
-                                                <rect key="frame" x="57" y="0.0" width="300" height="50"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="ezG-YS-91q"/>
-                                                </constraints>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecS-x9-KCt">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="tapBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0C7-7n-SkA"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="ecS-x9-KCt" firstAttribute="centerY" secondItem="X10-jZ-vwc" secondAttribute="centerY" id="2IV-XB-YM4"/>
-                                            <constraint firstAttribute="bottom" secondItem="ecS-x9-KCt" secondAttribute="bottom" id="Aal-aK-EDn"/>
-                                            <constraint firstAttribute="height" constant="50" id="YeE-Fi-cup"/>
-                                            <constraint firstItem="vBC-FG-m7F" firstAttribute="top" secondItem="X10-jZ-vwc" secondAttribute="top" id="bjw-oe-a23"/>
-                                            <constraint firstItem="ecS-x9-KCt" firstAttribute="centerX" secondItem="X10-jZ-vwc" secondAttribute="centerX" id="bpk-dU-LBJ"/>
-                                            <constraint firstItem="ecS-x9-KCt" firstAttribute="top" secondItem="X10-jZ-vwc" secondAttribute="top" id="gaL-YU-WK2"/>
-                                            <constraint firstAttribute="bottom" secondItem="vBC-FG-m7F" secondAttribute="bottom" id="gwq-y3-EBL"/>
-                                            <constraint firstItem="vBC-FG-m7F" firstAttribute="centerX" secondItem="X10-jZ-vwc" secondAttribute="centerX" id="mdV-LD-Jtl"/>
-                                            <constraint firstItem="ecS-x9-KCt" firstAttribute="leading" secondItem="X10-jZ-vwc" secondAttribute="leading" id="p2d-1i-THa"/>
-                                            <constraint firstAttribute="trailing" secondItem="ecS-x9-KCt" secondAttribute="trailing" id="pVs-If-aQa"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
@@ -92,7 +55,7 @@
                         <constraints>
                             <constraint firstItem="lhs-uu-pUY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2W8-L0-bWT"/>
                             <constraint firstAttribute="trailing" secondItem="b3l-2m-Mpm" secondAttribute="trailing" id="4hx-d9-Nst"/>
-                            <constraint firstAttribute="bottom" secondItem="b3l-2m-Mpm" secondAttribute="bottom" id="X4e-Em-BgG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="b3l-2m-Mpm" secondAttribute="bottom" id="X4e-Em-BgG"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lhs-uu-pUY" secondAttribute="trailing" id="Y9g-6o-xbc"/>
                             <constraint firstItem="lhs-uu-pUY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="-20" id="b8e-jP-6u9"/>
                             <constraint firstItem="b3l-2m-Mpm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bme-dg-c1t"/>
@@ -117,9 +80,4 @@
         <designable name="lhs-uu-pUY"/>
         <designable name="pf6-8r-dv9"/>
     </designables>
-    <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

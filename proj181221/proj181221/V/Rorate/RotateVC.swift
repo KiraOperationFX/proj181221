@@ -8,8 +8,7 @@
 import UIKit
 import CoreMotion
 
-class RotateVC: UIViewController {
-    
+class RotateVC: BaseViewController {
     
     @IBOutlet weak var b1: UIImageView!
     @IBOutlet weak var b2: UIImageView!
@@ -32,6 +31,11 @@ class RotateVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        gravity?.disable()
     }
     
     override func viewDidAppear(_ animated: Bool) {

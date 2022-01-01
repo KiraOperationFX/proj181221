@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BrightnessVC: UIViewController {
+class BrightnessVC: BaseViewController {
     
     @IBOutlet var uvBackground: UIView!
     @IBOutlet weak var imvBtnDarkLight: UIImageView!

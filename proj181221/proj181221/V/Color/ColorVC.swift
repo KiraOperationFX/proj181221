@@ -8,7 +8,7 @@
 import UIKit
 import UIColor_Hex_Swift
 
-class ColorVC: UIViewController {
+class ColorVC: BaseViewController {
     @IBOutlet weak var uvBackground: UIView!
     @IBOutlet weak var lblHexColor: UILabel!
     @IBOutlet weak var lblColorName: UILabel!

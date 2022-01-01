@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class HomeVC: UIViewController {
+class HomeVC: BaseViewController {
     
     @IBOutlet weak var uvTopAnimation: AnimationView!
     @IBOutlet weak var uvHeaderAnimation: AnimationView!
@@ -26,6 +26,7 @@ class HomeVC: UIViewController {
         tbvContent.register(cell: HomeTVC.self)
         tbvContent.delegate = self
         tbvContent.dataSource = self
+        tbvContent.contentInset.bottom = 50
     }
     
     override func viewDidAppear(_ animated: Bool) {

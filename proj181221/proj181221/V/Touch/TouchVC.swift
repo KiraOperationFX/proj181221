@@ -9,7 +9,7 @@ import UIKit
 import SwiftyDraw
 import Lottie
 
-class TouchVC: UIViewController {
+class TouchVC: BaseViewController {
     
     @IBOutlet weak var uvAnimation: AnimationView!
     @IBOutlet weak var uvDrawnArea: SwiftyDrawView!

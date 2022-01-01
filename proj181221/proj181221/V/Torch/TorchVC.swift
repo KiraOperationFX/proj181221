@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 import AVFoundation
 
-class TorchVC: UIViewController {
+class TorchVC: BaseViewController {
     
     @IBOutlet weak var uvAnimation1: AnimationView!
     @IBOutlet weak var uvAnimation2: AnimationView!

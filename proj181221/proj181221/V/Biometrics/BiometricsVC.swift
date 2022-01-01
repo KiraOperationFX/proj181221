@@ -9,7 +9,7 @@ import UIKit
 import LocalAuthentication
 import Lottie
 
-class BiometricsVC: UIViewController {
+class BiometricsVC: BaseViewController {
     
     @IBOutlet weak var uvAnimation1: AnimationView!
     @IBOutlet weak var uvAnimation2: AnimationView!
