@@ -69,7 +69,6 @@ class VibrationVC: BaseViewController {
             uvAnimation.alpha = 0
             uvAnimation.stop()
             uvAnimationCenter.stop()
-            self.showAdInterstitial(vc: self, deadline: .now()+3)
         }
     }
     
@@ -77,5 +76,4 @@ class VibrationVC: BaseViewController {
     @IBAction func tapAction(_ sender: Any) {
         vibrate()
     }
-    
 }

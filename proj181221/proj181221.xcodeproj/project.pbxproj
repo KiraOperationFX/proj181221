@@ -53,7 +53,8 @@
 		4F16BBB5277FFF52003FF5BD /* RotateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB4277FFF52003FF5BD /* RotateVC.swift */; };
 		4F16BBB727801206003FF5BD /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB627801205003FF5BD /* Gravity.swift */; };
 		4F16BBB9278051FF003FF5BD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16BBB8278051FF003FF5BD /* BaseViewController.swift */; };
-		4F16BBBB2780600C003FF5BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */; };
+		4F3A4FA3278188380033B1B5 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A4FA2278188380033B1B5 /* UIColor+RGB.swift */; };
+		4F3A4FA7278197130033B1B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F3A4FA6278197120033B1B5 /* GoogleService-Info.plist */; };
 		4F400997278065B200713DEF /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F400996278065B200713DEF /* RemoteConfigManager.swift */; };
 		4F4009992780707500713DEF /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4009982780707500713DEF /* Bundle+Version.swift */; };
 		4F40099B2780890300713DEF /* UIAlertController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40099A2780890200713DEF /* UIAlertController+Create.swift */; };
@@ -120,7 +121,8 @@
 		4F16BBB4277FFF52003FF5BD /* RotateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateVC.swift; sourceTree = "<group>"; };
 		4F16BBB627801205003FF5BD /* Gravity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
 		4F16BBB8278051FF003FF5BD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F3A4FA2278188380033B1B5 /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		4F3A4FA6278197120033B1B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F400996278065B200713DEF /* RemoteConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		4F4009982780707500713DEF /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
 		4F40099A2780890200713DEF /* UIAlertController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Create.swift"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				4F16BBAE277F48C8003FF5BD /* UIView+Border.swift */,
 				4F4009982780707500713DEF /* Bundle+Version.swift */,
 				4F40099A2780890200713DEF /* UIAlertController+Create.swift */,
+				4F3A4FA2278188380033B1B5 /* UIColor+RGB.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,7 +357,7 @@
 		4FDCA1EB276F04E0008D9868 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				4F16BBBA2780600C003FF5BD /* GoogleService-Info.plist */,
+				4F3A4FA6278197120033B1B5 /* GoogleService-Info.plist */,
 				4F161CA0277890400098D856 /* Lotties */,
 				4FDCA1EC276F04F8008D9868 /* R.generated.swift */,
 			);
@@ -460,7 +463,7 @@
 				4F161CA52778AD610098D856 /* VibrationStoryboard.storyboard in Resources */,
 				4F161C8827782ECC0098D856 /* ColorStoryboard.storyboard in Resources */,
 				4F16BB94277DC25A003FF5BD /* BiometricsStoryboard.storyboard in Resources */,
-				4F16BBBB2780600C003FF5BD /* GoogleService-Info.plist in Resources */,
+				4F3A4FA7278197130033B1B5 /* GoogleService-Info.plist in Resources */,
 				4F674AD7276F01C5008C66C0 /* HomeVC.storyboard in Resources */,
 				4F674ACA276EFE9A008C66C0 /* Main.storyboard in Resources */,
 				4F161C9D277887300098D856 /* 32896-caution-wet-paint.json in Resources */,
@@ -567,6 +570,7 @@
 				4F161CA72778AD7A0098D856 /* VibrationVC.swift in Sources */,
 				4F161C9B27786C9A0098D856 /* TouchVC.swift in Sources */,
 				4F161C96277865B10098D856 /* BrightnessVM.swift in Sources */,
+				4F3A4FA3278188380033B1B5 /* UIColor+RGB.swift in Sources */,
 				4F16BB96277DC283003FF5BD /* BiometricsVC.swift in Sources */,
 				4FDCA1ED276F04F8008D9868 /* R.generated.swift in Sources */,
 				4F161C612776DC460098D856 /* HomeM.swift in Sources */,
@@ -725,7 +729,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20211218;
+				CURRENT_PROJECT_VERSION = 2022010201;
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;
@@ -757,7 +761,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20211218;
+				CURRENT_PROJECT_VERSION = 2022010201;
 				DEVELOPMENT_TEAM = 8DWF4448F3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = proj181221/Info.plist;

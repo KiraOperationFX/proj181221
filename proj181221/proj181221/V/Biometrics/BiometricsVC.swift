@@ -19,6 +19,7 @@ class BiometricsVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        showAdInterstitial(vc: self, deadline: .now()+20)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,7 +55,6 @@ class BiometricsVC: BaseViewController {
                             } else  {
                                 wSelf.didTouchIdDone()
                             }
-                            wSelf.showAdInterstitial(vc: wSelf, deadline: .now()+3)
                         }
                     case false:
                         /// Xác thực thất bại. Xử lý logic thất bại

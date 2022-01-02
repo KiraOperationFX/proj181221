@@ -36,7 +36,11 @@ class ColorVC: BaseViewController {
         let color = UIColor(hexColor)
         uvBackground.backgroundColor = color
         lblHexColor.text = hexColor
-        lblColorName.text = color.accessibilityName
+        
+        // RGB name
+        if let components = color.rgb() {
+            lblColorName.text = "r:\(components.red)  g:\(components.green)  b:\(components.blue)"
+        }
     }
 
 }
