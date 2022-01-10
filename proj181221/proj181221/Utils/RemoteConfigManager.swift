@@ -9,7 +9,6 @@ import Foundation
 import FirebaseRemoteConfig
 
 enum RemoteConfigKey: String {
-    case showAdsBanner = "show_ads_banner"
     case buildShowAds = "build_show_ads"
     case buildForceUpdate = "build_force_update"
     case buildForceUpdateUrl = "build_force_update_url"
