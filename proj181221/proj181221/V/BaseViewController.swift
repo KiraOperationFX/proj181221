@@ -10,13 +10,13 @@ import GoogleMobileAds
 
 class BaseViewController: UIViewController {
     
-//    // RELEASE
-//    let AdsIdBanner: String = "ca-app-pub-3502939148318468~7344911083"
-//    let AdsIdInterstitial = "ca-app-pub-3502939148318468~7344911083"
+    // RELEASE
+    let AdsIdBanner: String = "ca-app-pub-3502939148318468~7344911083"
+    let AdsIdInterstitial = "ca-app-pub-3502939148318468~7344911083"
     
     // DEBUG
-    let AdsIdBanner: String = "ca-app-pub-3940256099942544/2934735716" // SAMPLE
-    let AdsIdInterstitial = "ca-app-pub-3940256099942544/4411468910"
+//    let AdsIdBanner: String = "ca-app-pub-3940256099942544/2934735716" // SAMPLE
+//    let AdsIdInterstitial = "ca-app-pub-3940256099942544/4411468910"
     
     var stopAds: Bool = true
     let bannerAdsView = UIView()
