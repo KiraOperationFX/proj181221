@@ -10,8 +10,13 @@ import GoogleMobileAds
 
 class BaseViewController: UIViewController {
     
-    //let UniqAppId: String = "ca-app-pub-3502939148318468~7344911083"
-    let UniqAppId: String = ""
+//    // RELEASE
+//    let AdsIdBanner: String = "ca-app-pub-3502939148318468~7344911083"
+//    let AdsIdInterstitial = "ca-app-pub-3502939148318468~7344911083"
+    
+    // DEBUG
+    let AdsIdBanner: String = "ca-app-pub-3940256099942544/2934735716" // SAMPLE
+    let AdsIdInterstitial = "ca-app-pub-3940256099942544/4411468910"
     
     var stopAds: Bool = true
     let bannerAdsView = UIView()
@@ -27,8 +32,8 @@ class BaseViewController: UIViewController {
         RemoteConfigManager.shared.fetchRemoteConfig()
         
         // Ads
-//        setupAdsBanner()
-//        setupAdsInterstitial()
+        setupAdsBanner()
+        setupAdsInterstitial()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,7 +76,7 @@ class BaseViewController: UIViewController {
     // Setup ads banner
     func setupAdsBanner() {
         bannerView = GADBannerView(adSize: GADAdSizeBanner)
-        bannerView.adUnitID = UniqAppId
+        bannerView.adUnitID = AdsIdBanner
         bannerView.rootViewController = self
         bannerView.delegate = self
         bannerView.load(GADRequest())
@@ -80,7 +85,7 @@ class BaseViewController: UIViewController {
     // Setup ads interstitial
     func setupAdsInterstitial() {
         let request = GADRequest()
-        GADInterstitialAd.load(withAdUnitID: UniqAppId,
+        GADInterstitialAd.load(withAdUnitID: AdsIdInterstitial,
                                request: request,
                                completionHandler: { [self] ad, error in
             if let error = error {

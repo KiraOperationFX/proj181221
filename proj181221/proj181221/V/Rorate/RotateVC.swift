@@ -32,6 +32,7 @@ class RotateVC: BaseViewController {
         super.viewDidLoad()
 
         bannerAdsView.isHidden = true
+        showAdInterstitial(vc: self, deadline: .now()+15)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -57,8 +58,6 @@ class RotateVC: BaseViewController {
             boundary: UIBezierPath(rect: self.view.frame),
             queue: nil)
         gravity?.enable()
-        
-        showAdInterstitial(vc: self, deadline: .now()+15)
     }
     
     func initializeMotionManager() {

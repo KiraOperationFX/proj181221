@@ -169,6 +169,7 @@
 		4F161C5E2776DBEE0098D856 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				4F16BBB8278051FF003FF5BD /* BaseViewController.swift */,
 				4FDCA1EE276F06B9008D9868 /* Home */,
 				4F161C8227782E6C0098D856 /* Color */,
 				4F161C90277865640098D856 /* Brightness */,
@@ -339,7 +340,6 @@
 				4F161C8927782FC90098D856 /* Extensions */,
 				4F16BB97277DC3BD003FF5BD /* PopupView.xib */,
 				4F16BB99277DC3EB003FF5BD /* PopupView.swift */,
-				4F16BBB8278051FF003FF5BD /* BaseViewController.swift */,
 				4F400996278065B200713DEF /* RemoteConfigManager.swift */,
 			);
 			path = Utils;

@@ -141,7 +141,7 @@ final class ColorVM: ColorVMProtocol {
         let nextIndex = self.index
         index += 1
         
-        if index%10 == 0 {
+        if index == 15 {
             delegate?.showAds()
         }
             
